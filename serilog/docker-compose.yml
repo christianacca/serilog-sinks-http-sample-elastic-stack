@@ -6,6 +6,7 @@ services:
       context: .
     environment: 
       USE_LOGSPOUT:
+      LOGSTASH_FIELDS: mri.category=log,mri.product=elk_demos,mri.environment=staging,mri.application=elk_demos_serilog
     networks:
       - elastic-stack_elk
 
